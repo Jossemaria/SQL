@@ -1,0 +1,24 @@
+CREATE TABLE    Coffee_shop (
+    Id INTEGER PRIMARY KEY,
+    Name TEXT,
+    Price INTEGER,
+    Quantity REAL, Quartez INTEGER);
+INSERT into coffee_shop values (1, "Bagel", 1.99, 12, 0);
+INSERT into coffee_shop values (2, "SmallCoffee", 3.99, 0, 2);
+INSERT into coffee_shop values (3, "Donut", 1.75, 15, 0);
+INSERT into coffee_shop values (4, "ChocCookie", 1.75, 22, 0);
+INSERT into coffee_shop values (5, "LargeCoffee", 6.99, 0, 4);
+INSERT into coffee_shop values (6, "BananaBread", 3.75, 18, 0);
+INSERT into coffee_shop values (7, "LemonCake", 3.75, 12, 0);
+INSERT into coffee_shop values (8, "MedCoffee", 4.99, 12, 0);
+INSERT into coffee_shop values (9, "RaisenBagel", 3.99, 0, 2);
+INSERT into coffee_shop values (10, "EggBites", 3.99, 15, 0);
+INSERT into coffee_shop values (11, "IcedCoffee", 1.75, 22, 0);
+INSERT into coffee_shop values (12, "Coldbrew", 1.99, 0, 4);
+INSERT into coffee_shop values (13, "SmallFrappe", 3.75, 18, 0);
+INSERT into coffee_shop values (14, "MedFrappe", 5.75, 12, 0);
+INSERT into coffee_shop values (15, "LargeFrappe", 8.75, 12, 0);
+SELECT * FROM Coffee_shop
+ORDER BY price;
+
+SELECT SUM(quantity) FROM Coffee_shop;
